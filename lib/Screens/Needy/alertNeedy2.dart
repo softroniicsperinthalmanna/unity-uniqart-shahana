@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-class alertNeedy extends StatelessWidget {
-  const alertNeedy({Key? key}) : super(key: key);
+class alertNeedy2 extends StatelessWidget {
+  const alertNeedy2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,8 @@ class alertNeedy extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30),
                     ),
                     // title: const Text("Alert Dialog Box"),
-                    content: const Text("Your request is accepted"),
+                    content: const Text("iam sorry!!!"
+                        "But we have to refuse your request"),
                     actions: <Widget>[
                       TextButton(
                         onPressed: () {
