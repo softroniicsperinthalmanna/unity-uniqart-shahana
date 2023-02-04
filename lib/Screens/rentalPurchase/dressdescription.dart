@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../styles/style.dart';
-class DetailPageArt extends StatelessWidget {
-  const DetailPageArt({Key? key}) : super(key: key);
+class DressDescription extends StatelessWidget {
+  const DressDescription({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class DetailPageArt extends StatelessWidget {
                 Container(
                   height: 200,
                   width: 250,
-                  child: Image(image: AssetImage("assets/images/choker.jpg"),fit: BoxFit.cover,),
+                  child: Image(image: AssetImage("assets/images/saree.jpg"),fit: BoxFit.cover,),
                 ),
                 Padding(
                   padding:  EdgeInsets.only(top: 10),
@@ -62,16 +62,16 @@ class DetailPageArt extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      Text('size:',style:heading1,),
+                      Text('size & fit:',style:heading1,),
                       SizedBox(
                         height: 10,
                       ),
                       Container(
                           width: 350,                        color: Color(0xffD9D9D9),
-                        padding: EdgeInsets.all(8),
-                        child: SizedBox(
-                          height: 15,
-                        )
+                          padding: EdgeInsets.all(8),
+                          child: SizedBox(
+                            height: 15,
+                          )
 
 
                       ),
@@ -85,16 +85,16 @@ class DetailPageArt extends StatelessWidget {
 
 
                       ),
-                      Text('pattern:',style:heading1,),
-                      Container(
-                          width: 350,                          color: Color(0xffD9D9D9),
-                          padding: EdgeInsets.all(8),
-                          child: SizedBox(
-                            height: 15,
-                          )
+                     // Text('pattern:',style:heading1,),
+                      //Container(
+                        //  width: 350,                          color: Color(0xffD9D9D9),
+                          //padding: EdgeInsets.all(8),
+                          //child: SizedBox(
+                            //height: 15,
+                          //)
 
 
-                      ),
+                      //),
                       SizedBox(
                         height: 20,
                       ),

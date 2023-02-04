@@ -1,16 +1,18 @@
+import 'package:clgapp/styles/style.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../styles/style.dart';
-class DetailPageArt extends StatelessWidget {
-  const DetailPageArt({Key? key}) : super(key: key);
+
+class AddDescription extends StatelessWidget {
+  const AddDescription({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       //: kBackMouseButton,
       appBar: AppBar(
-        backgroundColor: Color(0xffAF5DA2),
+        backgroundColor: Color(0xff69456F),
         title:const Text("UNIQART"),
 
         centerTitle: true,
@@ -27,7 +29,7 @@ class DetailPageArt extends StatelessWidget {
                 Container(
                   height: 200,
                   width: 250,
-                  child: Image(image: AssetImage("assets/images/choker.jpg"),fit: BoxFit.cover,),
+                  child: Image(image: AssetImage("assets/images/snap.jpg"),fit: BoxFit.cover,),
                 ),
                 Padding(
                   padding:  EdgeInsets.only(top: 10),
@@ -35,7 +37,7 @@ class DetailPageArt extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Description', style:heading1
+                      Text('Description', style:heading1,
                       ),
                       SizedBox(
                         height: 10,
@@ -45,58 +47,33 @@ class DetailPageArt extends StatelessWidget {
 
                           color: Color(0xffD9D9D9),
                           padding: EdgeInsets.all(8),
-                          child: Text('In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used asc' ,)),
+                          child: TextFormField( )),
                       SizedBox(
                         height: 10,
                       ),
 
-                      Text('Rate: ',style: heading1,),
+                      Text('Rate: ',style:heading1 ,),
+                      TextFormField(),
                       Container(
                         width: 350,
                         color: Color(0xffD9D9D9),
-                        padding: EdgeInsets.all(8),
-                        child: SizedBox(
-                          height: 10,
-                        ),
-                      ),
+                        padding: EdgeInsets.all(8),),
                       SizedBox(
                         height: 10,
                       ),
                       Text('size:',style:heading1,),
                       SizedBox(
-                        height: 10,
+                        height: 20,
                       ),
                       Container(
                           width: 350,                        color: Color(0xffD9D9D9),
-                        padding: EdgeInsets.all(8),
-                        child: SizedBox(
-                          height: 15,
-                        )
-
-
-                      ),
-                      Text('material & care:',style:heading1,),
-                      Container(
-                          width: 350,                          color: Color(0xffD9D9D9),
                           padding: EdgeInsets.all(8),
                           child: SizedBox(
                             height: 15,
                           )
-
-
-                      ),
-                      Text('pattern:',style:heading1,),
-                      Container(
-                          width: 350,                          color: Color(0xffD9D9D9),
-                          padding: EdgeInsets.all(8),
-                          child: SizedBox(
-                            height: 15,
-                          )
-
-
                       ),
                       SizedBox(
-                        height: 20,
+                        height: 50,
                       ),
 
 
@@ -105,9 +82,9 @@ class DetailPageArt extends StatelessWidget {
                         child: Container(
                           height: 50,
                           width: 170,
-                          color: Color(0xffAF5DA2),
+                          color: Color(0xff69456F),
 
-                          child: Center(child: Text('BUY',style: heading1,)),
+                          child: Center(child: Text('ADD',style: heading1,)),
 
                         ),
                       )
