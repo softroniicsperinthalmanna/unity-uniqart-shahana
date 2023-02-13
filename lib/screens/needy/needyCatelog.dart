@@ -10,6 +10,7 @@ import 'package:uniqart_app/styles/style.dart';
 import '../../../models/artmodel.dart';
 import '../../models/donateModel.dart';
 import 'needyBook.dart';
+import 'needyUniform.dart';
 class NeedyCatelog extends StatefulWidget {
   const NeedyCatelog({Key? key}) : super(key: key);
 
@@ -86,6 +87,12 @@ class _NeedyCatelogState extends State<NeedyCatelog> {
                         print(index);
                         print('pressed book category');
 
+                        if(index==0){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>uniform_Needy(
+
+                          )));
+
+                        }else
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>Book_Needy(
 
                         )));

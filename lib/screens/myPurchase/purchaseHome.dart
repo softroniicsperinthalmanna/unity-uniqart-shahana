@@ -3,6 +3,7 @@ import 'package:uniqart_app/screens/donor/donateCategory.dart';
 import 'package:uniqart_app/screens/myPurchase/plants/plantCatelog.dart';
 import 'package:uniqart_app/screens/myPurchase/purchaseCatelog.dart';
 import 'package:uniqart_app/screens/mySale/sellerHome.dart';
+import 'package:uniqart_app/screens/needy/needyCatelog.dart';
 import 'package:uniqart_app/styles/style.dart';
 
 import '../../models/catelogModel.dart';
@@ -84,8 +85,11 @@ late bool listVisibility;
                               child: Text('Donate',style: tealNormalauthBtn,)),
 
                           TextButton(onPressed: (){
+    Navigator.push(context, MaterialPageRoute(builder: (context)=>NeedyCatelog()));
 
-                          }, 
+    },
+
+
                               child: Text('For Needy',style: tealNormalauthBtn,)),
 
 
