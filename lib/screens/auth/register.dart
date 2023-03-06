@@ -68,15 +68,15 @@ class _SignUpState extends State<SignUp> {
             children: [
               Center(child: Text('Create Account',style:authHead,)),
               SizedBox(height: 20,),
-              RadioListTile(
-                  value: isSelected,
-                  groupValue: gender,
-                  onChanged: ( value){
-                    setState(() {
-                      isSelected=value as String;
-                    });
-                  }
-              ),
+              // RadioListTile(
+              //     value: isSelected,
+              //     groupValue: gender,
+              //     onChanged: ( value){
+              //       setState(() {
+              //         isSelected=value as String;
+              //       });
+              //     }
+              // ),
 
               TextFormField(
                 controller: nameCtrlr,

@@ -127,6 +127,7 @@ print(loginID);
                     style: OutlinedButton.styleFrom(
                         side: BorderSide(color: Colors.amber)),
                     onPressed: () {
+
                       setState(() {
                         signIn();
                         print('Flag inside button $flag');
